@@ -3,12 +3,11 @@ package org;
 public class User {
     public String firstName;
     public String lastName;
-    public double accBalance = 0.0;
+    protected double accBalance = 0.0;
 
-    public BankAccount (String firstName, String lastName, double accBalance) {
+    public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.accBalance = this.accBalance;
     }
 
     public String getFirstName() {
