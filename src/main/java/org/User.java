@@ -5,11 +5,13 @@ public class User {
     public String lastName;
     protected double accBalance = 0.0;
 
+    // Constructors
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
+    // Get/Set methods
     public String getFirstName() {
         return this.firstName;
     }
@@ -42,6 +44,7 @@ public class User {
         return firstName + " " + lastName + "- Balance: $" + accBalance;
     }
 
+    // Banking features
     public void deposit(double amount) {
         this.accBalance += amount;
     }

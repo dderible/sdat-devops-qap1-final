@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class AppTest {
 
+    // Deposit Test
     @Test
     public void testDeposit() {
         User appTest = new User("John", "Doe");
@@ -11,11 +12,12 @@ public class AppTest {
         Assertions.assertEquals(709, appTest.accBalance);
     }
 
+    // Withdrawal Test
     @Test
     public void testWithdraw() {
         User appTest = new User("John", "Doe");
-        appTest.deposit(840);
+        appTest.deposit(900);
         appTest.withdraw(420);
-        Assertions.assertEquals(420, appTest.accBalance);
+        Assertions.assertEquals(480, appTest.accBalance);
     }
 }
